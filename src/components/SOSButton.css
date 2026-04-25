@@ -1,0 +1,116 @@
+.sos-button-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+/* Radar rings */
+.sos-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid rgba(244, 63, 94, 0.12);
+  animation: radar 3.5s ease-out infinite;
+}
+
+.sos-ring-1 {
+  width: 200px;
+  height: 200px;
+  animation-delay: 0s;
+}
+
+.sos-ring-2 {
+  width: 200px;
+  height: 200px;
+  animation-delay: 1.2s;
+}
+
+.sos-ring-3 {
+  width: 200px;
+  height: 200px;
+  animation-delay: 2.4s;
+}
+
+/* Progress ring */
+.sos-progress-ring {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+  filter: drop-shadow(0 0 8px rgba(244, 63, 94, 0.3));
+}
+
+/* Main button */
+.sos-button {
+  position: relative;
+  z-index: 3;
+  border-radius: 50%;
+  border: none;
+  background: 
+    radial-gradient(circle at 35% 30%, #fb7185, #F43F5E, #E11D48, #9F1239);
+  color: white;
+  cursor: pointer;
+  box-shadow:
+    0 0 40px rgba(244, 63, 94, 0.35),
+    0 0 80px rgba(244, 63, 94, 0.15),
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 -6px 16px rgba(0, 0, 0, 0.35),
+    inset 0 2px 8px rgba(255, 255, 255, 0.12);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: pulse-red 2.5s infinite;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  touch-action: manipulation;
+}
+
+.sos-button:hover {
+  box-shadow:
+    0 0 60px rgba(244, 63, 94, 0.5),
+    0 0 100px rgba(244, 63, 94, 0.2),
+    0 12px 40px rgba(0, 0, 0, 0.3),
+    inset 0 -6px 16px rgba(0, 0, 0, 0.35),
+    inset 0 2px 8px rgba(255, 255, 255, 0.12);
+  transform: scale(1.04);
+}
+
+.sos-button.pressing {
+  transform: scale(0.93);
+  box-shadow:
+    0 0 80px rgba(244, 63, 94, 0.7),
+    0 0 120px rgba(244, 63, 94, 0.3),
+    inset 0 6px 20px rgba(0, 0, 0, 0.5);
+  animation: none;
+  background: radial-gradient(circle at 50% 50%, #fb7185, #F43F5E, #BE123C);
+}
+
+.sos-button.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  animation: none;
+  filter: grayscale(0.5);
+}
+
+.sos-button-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  position: relative;
+}
+
+.sos-button-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.sos-button-subtext {
+  font-family: 'Inter', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  opacity: 0.75;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
