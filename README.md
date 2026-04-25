@@ -1,4 +1,4 @@
-# 🚨 HackHers – GUARDIAN Emergency Response App
+# 🚨 HackHers Guardian – Emergency Response App
 
 > A real-time life-saving system designed to respond instantly during emergencies using SOS alerts, live tracking, and voice activation.
 
@@ -7,7 +7,7 @@
 ## 📱 Download & Try the App
 
 👉 **APK Download:**
-https://github.com/karthigasreesuresh07-glitch/Hackhers-Guardian-app/releases/download/v1.0/Hackhers_Guardian_App.apk
+https://github.com/karthigasreesuresh07-glitch/Hackhers-Guardian-app-final/releases/download/v1.0/Hackhers_Guardian_App.apk
 
 ---
 
@@ -15,7 +15,7 @@ https://github.com/karthigasreesuresh07-glitch/Hackhers-Guardian-app/releases/do
 
 In emergency situations, **every second matters**. Most existing solutions lack real-time automation and instant accessibility.
 
-**HackHers Guardian** provides a **smart, fast, and responsive emergency system** that enables users to trigger alerts instantly and get help without delay.
+**HackHers Guardian** provides a **smart, fast, and responsive emergency system** that enables users to trigger alerts instantly and receive help without delay.
 
 ---
 
@@ -53,8 +53,8 @@ In emergency situations, **every second matters**. Most existing solutions lack 
 
 ## 📂 Project Structure
 
-```text
-Hackhers-Guardian-app/
+```text id="8l1e4z"
+Hackhers-Guardian-app-final/
 │
 ├── src/
 │   ├── components/
@@ -78,7 +78,7 @@ Hackhers-Guardian-app/
 
 ## ⚙️ Installation & Setup
 
-```bash
+```bash id="y6dgj0"
 git clone https://github.com/karthigasreesuresh07-glitch/Hackhers-Guardian-app-final.git
 cd Hackhers-Guardian-app-final
 npm install
@@ -89,7 +89,7 @@ npm run dev
 
 ## 📱 Android App Setup
 
-```bash
+```bash id="36gxb9"
 npx cap add android
 npx cap sync
 npx cap open android
@@ -128,9 +128,9 @@ npx cap open android
 ## 👩‍💻 Team
 
 * **Karthiga Sree Suresh** – Team Lead & Developer
-* **Kaviya** – Backend Support
-* **Kaviya Sri** – UI/UX Designer
-* **Harina Shri** – Frontend Developer
+* **Kaviya A** – Backend Support
+* **Kaviyasri R** – UI/UX Designer
+* **Harina Shri S** – Frontend Developer
 
 ---
 
